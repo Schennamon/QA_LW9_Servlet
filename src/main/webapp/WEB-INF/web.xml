@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>ServletClass</servlet-name>
+        <servlet-class>ServletClass</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletClass</servlet-name>
+        <url-pattern>/get-info</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>NewJsp</servlet-name>
+        <jsp-file>/task.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewJsp</servlet-name>
+        <url-pattern>/jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletUser</servlet-name>
+        <servlet-class>ServletUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletUser</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Jsp</servlet-name>
+        <jsp-file>/html.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jsp</servlet-name>
+        <url-pattern>/user-form</url-pattern>
+    </servlet-mapping>
+</web-app>
